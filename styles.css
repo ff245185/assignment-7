@@ -11,6 +11,33 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+
+#header ul {
+  display: flex;
+  list-style: none;
+}
+
+#header ul li {
+  margin: 10px 2px;
+}
+
+#header ul li a {
+  padding: 15px;
+  color: rgb(235, 235, 235);
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid orangered;
+  background-color: #e78c04;
+  text-decoration: none;
+
+}
+
+#header ul li a:hover {
+  color: #9e0d0d !important;
+  background-color: aqua;
+  font-weight: 700;
+}
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -177,12 +204,20 @@ button {
   background: rgb(255, 255, 255);
   background: linear-gradient(92.49deg,
       rgba(54, 243, 7, 0.767) 0.18%,
-      rgba(255, 255, 255, 0.05) 99.85%);
+      rgba(3, 149, 194, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
+}
+
+#btn420 {
+  float: left;
+  border-radius: 3px;
+  border: #8d6700;
+  color: aliceblue;
+
 }
 
 
@@ -192,6 +227,18 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+
+
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #question {
+    height: 100%;
+    padding: 20px 10px;
   }
 
   #header {
